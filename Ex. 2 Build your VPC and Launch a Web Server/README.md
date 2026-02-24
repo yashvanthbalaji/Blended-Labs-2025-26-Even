@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: BALAJI A
+* **Register Number**: 212223040023
+* **Date of Submission**: 12/02/2026
 
 ---
 
@@ -83,15 +83,23 @@ Install and start a web server (Apache HTTPD) on the EC2 instance using user dat
 
 Create a simple HTML page and verify that it can be accessed from a web browser using the public IP address of the instance.---
 
-## Workflow (Student Explanation)
+## Workflow (Student Explanation):
 
-(Write the steps you followed in your own words)
+1.First, I created a VPC in Amazon Web Services. I gave it a CIDR block of 10.0.0.0/16. This VPC acts as my private network where all my resources will be created.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+2.Next, I created a public subnet inside the VPC with CIDR 10.0.1.0/24. I enabled auto-assign public IP so that any instance launched in this subnet will automatically get a public IP address.
+
+3.After that, I created an Internet Gateway and attached it to my VPC. This allows my VPC to communicate with the internet.
+
+4.Then, I created a route table and added a default route (0.0.0.0/0) pointing to the Internet Gateway. I associated this route table with my public subnet. This step ensures that traffic from my subnet can reach the internet.
+
+5.Next, I created a security group which acts as a virtual firewall. I allowed inbound traffic for SSH on port 22 and HTTP on port 80.
+
+6.After completing the network setup, I launched an EC2 instance using Amazon Linux 2 AMI with instance type t2.micro. I selected my VPC, public subnet, created security group, and key pair.
+
+Finally, I connected to the EC2 instance using SSH and installed the Apache web server. I started the service and created a simple HTML page. Then I copied the public IP address of the instance and opened it in a web browser. The webpage was displayed successfully.
+
+So, this is how I created a VPC, launched an EC2 instance, and hosted a simple web server in AWS.
 
 ---
 
@@ -99,19 +107,18 @@ Create a simple HTML page and verify that it can be accessed from a web browser 
 
 ### Screenshot 1: VPC and Subnet Details
 
-(Insert Screenshot Here)
+<img width="1256" height="732" alt="image" src="https://github.com/user-attachments/assets/4a3cd52a-ed49-4e0c-8d8d-087efff3dd27" />
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-(Insert Screenshot Here)
+<img width="1263" height="731" alt="image" src="https://github.com/user-attachments/assets/665c1752-bd45-41f8-ad18-e8520ccd4ff1" />
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
-
-(Insert Screenshot Here)
+<img width="1267" height="670" alt="image" src="https://github.com/user-attachments/assets/f0070e07-685c-49b3-88a8-8e4421fc74c5" />
 
 ---
 
