@@ -113,7 +113,7 @@ So, this is how I created a VPC, launched an EC2 instance, and hosted a simple w
 
 ### Screenshot 2: EC2 Instance Running
 
-<img width="1263" height="731" alt="image" src="https://github.com/user-attachments/assets/665c1752-bd45-41f8-ad18-e8520ccd4ff1" />
+<img width="1261" height="561" alt="image" src="https://github.com/user-attachments/assets/162e9d69-e83b-4523-a1bd-9bfc4941806b" />
 
 ---
 
