@@ -98,10 +98,14 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 (Write the steps you followed in your own words)
 
-1. First, I logged in to the AWS Management Console using my AWS account and navigated to the Amazon EC2 service dashboard to explore the available options like Instances, AMIs, Key Pairs, and Security Groups.
+First, I logged in to the AWS Management Console using my AWS account and navigated to the Amazon EC2 service dashboard to explore the available options like Instances, AMIs, Key Pairs, and Security Groups.
+
 Next, I clicked on Launch Instance, selected the Amazon Linux 2 AMI, and chose the t2.micro instance type under the free tier. I configured the instance name, created a new key pair, and downloaded the .pem file.
+
 Then, I configured the Security Group by allowing inbound rules for SSH (Port 22) from my IP address and HTTP (Port 80) from anywhere. After reviewing all configurations, I launched the EC2 instance.
+
 Once the instance was in the running state, I copied the Public IP address and connected to the instance using SSH through the terminal with the key pair file. After successful login, I verified the connection by running basic Linux commands.
+
 After testing the instance, I performed basic instance operations such as Stop, Start, and Reboot from the EC2 console and observed the status changes in the Monitoring tab. Finally, I terminated the instance to avoid unnecessary charges. 
 
 ---
@@ -110,7 +114,7 @@ After testing the instance, I performed basic instance operations such as Stop, 
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-<img width="1233" height="646" alt="image" src="https://github.com/user-attachments/assets/69d0b447-7c31-4eb0-9e0a-c0599d69d960" />
+<img width="1076" height="595" alt="image" src="https://github.com/user-attachments/assets/2844104d-35cb-44c9-842d-f62f9d3a03da" />
 
 
 ---
